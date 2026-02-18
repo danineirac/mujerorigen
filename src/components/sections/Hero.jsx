@@ -36,12 +36,12 @@ export default function Hero() {
           reconectar contigo y volver a tu poder femenino.
         </p>
 
-        <div className="mb-8 text-sm tracking-widest uppercase opacity-70">
+        <div className="mb-8 text-sm tracking-widest uppercase opacity-90">
           11 de abril · Paipa – Boyacá · 8:00 am a 7:00 pm
         </div>
 
         <a
-            href="https://wa.me/573001234567?text=Hola%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen"
+            href="https://wa.me/573007308273?text=Hola%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-vino hover:bg-[#5a1823] transition-all duration-300 px-10 py-4 rounded-full text-beige font-semibold tracking-wide shadow-lg hover:shadow-2xl hover:scale-105"

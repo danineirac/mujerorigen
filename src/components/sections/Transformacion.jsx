@@ -1,7 +1,63 @@
 export default function Transformacion() {
+
+  const beneficios = [
+    "Volverás a confiar en tu intuición.",
+    "Pondrás límites claros sin sentir que estás perdiendo amor.",
+    "Sanarás heridas que siguen repitiéndose en tus relaciones.",
+    "Reconectarás con tu sabiduría, tu poder y tu belleza.",
+    "Activarás tu magnetismo femenino.",
+    "Tomarás la decisión de dejar de sobrevivir y empezar a vivir desde tu conciencia."
+  ]
+
   return (
-    <section>
-      <h2>Transformación</h2>
+    <section className="relative bg-fondo py-28 px-6 overflow-hidden">
+
+      <div className="max-w-6xl mx-auto text-center">
+
+        <h2 className="font-serif text-3xl md:text-5xl text-vino mb-6">
+          Lo que cambia después de Mujer Origen
+        </h2>
+
+        <p className="text-lg text-gray-600 mb-16 max-w-2xl mx-auto">
+          Tu energía cambia, y cuando tu energía cambia,
+          tus relaciones y todo a tu alrededor también.
+        </p>
+
+        {/* GRID CARDS */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          {beneficios.map((item, index) => (
+            <div
+              key={index}
+              className={`bg-white/70 backdrop-blur-sm border border-beige rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2
+              
+              ${index % 2 === 0 ? "rotate-[-1deg]" : "rotate-[1deg]"}
+              `}
+            >
+              <p className="text-gray-700 text-lg leading-relaxed">
+                {item}
+              </p>
+            </div>
+          ))}
+
+        </div>
+
+        {/* Cierre emocional */}
+        <div className="mt-20 space-y-4">
+          <p className="font-serif text-xl text-vino">
+            No sales motivada.
+          </p>
+          <p className="font-serif text-2xl md:text-3xl text-vino">
+            Sales transformada.
+          </p>
+        </div>
+
+      </div>
+
+      {/* Glow energético de fondo */}
+      <div className="absolute -top-20 -right-20 w-96 h-96 bg-vino/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-salvia/10 rounded-full blur-3xl"></div>
+
     </section>
   )
 }
