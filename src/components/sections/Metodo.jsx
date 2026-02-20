@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 export default function Metodo() {
   const fases = [
     {
@@ -56,10 +58,37 @@ export default function Metodo() {
                 </div>
 
                 {/* Punto ceremonial */}
+                {/* Punto ceremonial animado */}
                 <div className="relative z-10 flex items-center justify-center">
-                  <div className="w-14 h-14 bg-vino rounded-full flex items-center justify-center shadow-xl">
-                    <div className="w-6 h-6 bg-beige rounded-full"></div>
-                  </div>
+
+                  <motion.div
+                    className="w-14 h-14 rounded-full flex items-center justify-center shadow-xl"
+                    animate={{
+                      background: [
+                        "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)",
+                        "linear-gradient(135deg, #E8DFD4 0%, #6B1F2B 100%)",
+                        "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)"
+                      ]
+                    }}
+                    transition={{
+                      duration: 6 + index, // cada punto con timing distinto
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <motion.div
+                      className="w-6 h-6 rounded-full"
+                      animate={{
+                        backgroundColor: ["#E8DFD4", "#6B1F2B", "#E8DFD4"]
+                      }}
+                      transition={{
+                        duration: 6 + index,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    />
+                  </motion.div>
+
                 </div>
 
                 <div className="md:w-1/2"></div>

@@ -1,4 +1,27 @@
+import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
+
 export default function Transformacion() {
+
+  const ref = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  })
+
+  // Capa oscura que sube desde abajo
+  const overlayOpacity = useTransform(
+    scrollYProgress,
+    [0.2, 0.8],
+    [0, 1]
+  )
+
+  const overlayY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["100%", "0%"]
+  )
 
   const beneficios = [
     "Volverás a confiar en tu intuición.",
@@ -10,9 +33,21 @@ export default function Transformacion() {
   ]
 
   return (
-    <section className="relative bg-fondo py-28 px-6 overflow-hidden">
+    <section
+      ref={ref}
+      className="relative bg-[#E8DFD4] py-28 px-6 overflow-hidden"
+    >
 
-      <div className="max-w-6xl mx-auto text-center">
+      {/* Capa oscura que sube */}
+      <motion.div
+        style={{
+          opacity: overlayOpacity,
+          y: overlayY
+        }}
+        className="absolute inset-0 bg-[#4F5D4D]"
+      />
+
+      <div className="relative z-10 max-w-6xl mx-auto text-center">
 
         <h2 className="font-serif text-3xl md:text-5xl text-vino mb-6">
           Lo que cambia después de Mujer Origen
@@ -23,16 +58,13 @@ export default function Transformacion() {
           tus relaciones y todo a tu alrededor también.
         </p>
 
-        {/* GRID CARDS */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {beneficios.map((item, index) => (
             <div
               key={index}
               className={`bg-white/70 backdrop-blur-sm border border-beige rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2
-              
-              ${index % 2 === 0 ? "rotate-[-1deg]" : "rotate-[1deg]"}
-              `}
+              ${index % 2 === 0 ? "-rotate-1" : "rotate-1"}`}
             >
               <p className="text-gray-700 text-lg leading-relaxed">
                 {item}
@@ -42,7 +74,6 @@ export default function Transformacion() {
 
         </div>
 
-        {/* Cierre emocional */}
         <div className="mt-20 space-y-4">
           <p className="font-serif text-xl text-vino">
             No sales motivada.
@@ -53,10 +84,6 @@ export default function Transformacion() {
         </div>
 
       </div>
-
-      {/* Glow energético de fondo */}
-      <div className="absolute -top-20 -right-20 w-96 h-96 bg-vino/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-salvia/10 rounded-full blur-3xl"></div>
 
     </section>
   )

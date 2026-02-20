@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,7 +18,10 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-beige/80 backdrop-blur-md shadow-md py-4"
@@ -26,13 +30,23 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
 
-        {/* Logo */}
-        <div
-          className={`font-serif text-xl tracking-wide transition-colors duration-500 ${
-            scrolled ? "text-vino" : "text-beige"
-          }`}
-        >
-          Mujer Origen
+<div className="flex items-center gap-3">
+
+          {/* Luna minimalista */}
+          <div
+            className={`w-6 h-6 rounded-full border transition-all duration-500 ${
+              scrolled ? "border-vino" : "border-beige"
+            }`}
+          ></div>
+
+          <div
+            className={`font-serif text-xl tracking-wide transition-colors duration-500 ${
+              scrolled ? "text-vino" : "text-beige"
+            }`}
+          >
+            Mujer Origen
+          </div>
+
         </div>
 
         {/* Botón */}
@@ -50,6 +64,6 @@ export default function Navbar() {
         </a>
 
       </div>
-    </header>
+    </motion.header>
   )
 }
