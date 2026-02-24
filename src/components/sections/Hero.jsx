@@ -14,7 +14,7 @@ export default function Hero() {
         />
 
         {/* Overlay más elegante */}
-        <div className="absolute inset-0 bg-gradient-to-b 
+        <div className="absolute inset-0 bg-linear-to-b 
                         from-black/40 
                         via-black/60 
                         to-black/85" />
@@ -69,7 +69,7 @@ export default function Hero() {
       </div>
 
       {/* Luz inferior más sutil */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black/80 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-black/80 to-transparent" />
 
     </section>
   )

@@ -3,7 +3,7 @@ import identiImage from "../../assets/images/danna.jpg"
 export default function Identificacion() {
   return (
 
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section id="Identificacion" data-nav="dark" className="relative py-24 px-6 overflow-hidden">
 
   {/* Fondo base beige */}
   <div className="absolute inset-0 bg-beige"></div>

@@ -33,7 +33,7 @@ export default function Transformacion() {
   ]
 
   return (
-    <section
+    <section id="Transformacion" data-nav="dark"
       ref={ref}
       className="relative bg-[#E8DFD4] py-28 px-6 overflow-hidden"
     >

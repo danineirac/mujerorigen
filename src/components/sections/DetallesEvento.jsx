@@ -1,6 +1,6 @@
 export default function DetallesEvento() {
   return (
-    <section className="relative bg-beige py-32 px-6 overflow-hidden">
+    <section id="DetallesEvento" data-nav="dark" className="relative bg-beige py-32 px-6 overflow-hidden">
 
       <div className="max-w-4xl mx-auto text-center">
 
@@ -9,7 +9,7 @@ export default function DetallesEvento() {
         </h2>
 
         {/* Tarjeta ceremonial */}
-        <div className="relative bg-fondo border border-vino/30 rounded-[2rem] p-12 md:p-16 shadow-2xl">
+        <div className="relative bg-fondo border border-vino/30 rounded-4xl p-12 md:p-16 shadow-2xl">
 
           <div className="space-y-10 text-lg md:text-xl text-gray-700">
 

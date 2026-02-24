@@ -17,7 +17,7 @@ export default function LobaSection() {
           alt="La loba - símbolo de Mujer Origen"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-[#6B1F2B]/80 to-black/90"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-[#6B1F2B]/80 to-black/90"></div>
       </motion.div>
 
       {/* Partículas flotantes */}
@@ -50,7 +50,7 @@ export default function LobaSection() {
         </p>
       </motion.div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-black to-transparent"></div>
 
     </section>
   )

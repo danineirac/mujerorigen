@@ -1,4 +1,7 @@
 import { motion } from "framer-motion"
+import whatsappIcon from "../../assets/images/whatsapp-ico.png"
+import instagramIcon from "../../assets/images/instagram-ico.png"
+import tiktokIcon from "../../assets/images/tiktok-ico.png"
 
 export default function Footer() {
   return (
@@ -39,13 +42,18 @@ export default function Footer() {
               Contacto
             </p>
 
+
             <a
               href="https://wa.me/573001234567"
               target="_blank"
               rel="noopener noreferrer"
-              className="block hover:opacity-70 transition"
+              className="block hover:opacity-70 transition content-center"
             >
-              WhatsApp
+              <img
+                src={whatsappIcon}
+                alt="whatsapp"
+                className=""
+              />
             </a>
 
             <a
@@ -54,7 +62,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="block hover:opacity-70 transition"
             >
-              Instagram
+              
+              <img
+                src={instagramIcon}
+                alt="Instagram"
+                className="items-center"
+              />
+              
             </a>
 
             <a
@@ -63,7 +77,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="block hover:opacity-70 transition"
             >
-              TikTok
+              <img
+                src={tiktokIcon}
+                alt="TikTok"
+                className="items-center"
+              />
             </a>
           </div>
 

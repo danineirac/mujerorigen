@@ -1,6 +1,6 @@
 export default function PerfilEvento() {
   return (
-    <section className="relative bg-vino py-32 px-6 text-beige overflow-hidden">
+    <section id="PerfilEvento" data-nav="dark" className="relative bg-vino py-32 px-6 text-beige overflow-hidden">
 
       <div className="max-w-6xl mx-auto">
 

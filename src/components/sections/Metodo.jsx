@@ -20,7 +20,7 @@ export default function Metodo() {
   ]
 
   return (
-    <section className="relative bg-beige py-32 px-6 overflow-hidden">
+    <section id="Metodo" data-nav="dark" className="relative bg-beige py-32 px-6 overflow-hidden">
 
       <div className="max-w-5xl mx-auto">
 
@@ -36,7 +36,7 @@ export default function Metodo() {
         <div className="relative">
 
           {/* Línea vertical */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] bg-salvia/40 h-full"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-salvia/40 h-full"></div>
 
           <div className="space-y-24">
 

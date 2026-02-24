@@ -2,7 +2,7 @@ import heroImage from "../../assets/images/danna.jpg"
 
 export default function SobreDanna() {
   return (
-    <section className="relative bg-fondo py-32 px-6 text-center overflow-hidden">
+    <section id="SobreDanna" data-nav="dark" className="relative bg-fondo py-32 px-6 text-center overflow-hidden">
 
       <div className="max-w-4xl mx-auto">
 

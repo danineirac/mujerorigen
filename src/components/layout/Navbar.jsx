@@ -2,15 +2,24 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
+  const [navMode, setNavMode] = useState("light")
 
   useEffect(() => {
+    const sections = document.querySelectorAll("section[id]")
+
     const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
+      let currentMode = "light"
+
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect()
+        const navType = section.dataset.nav
+
+        if (rect.top <= 120 && rect.bottom >= 120) {
+          currentMode = navType
+        }
+      })
+
+      setNavMode(currentMode)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -21,44 +30,41 @@ export default function Navbar() {
     <motion.header
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-beige/80 backdrop-blur-md shadow-md py-4"
-          : "bg-transparent py-6"
-      }`}
+      transition={{ duration: 1.2 }}
+      className="fixed top-0 left-0 w-full z-50 py-6 transition-all duration-500"
     >
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div className="relative max-w-6xl mx-auto px-6 flex items-center justify-between">
 
-<div className="flex items-center gap-3">
+        {/* LUNA */}
+        <div
+          className={`w-6 h-6 rounded-full border transition-all duration-500 ${
+            navMode === "dark" ? "border-black" : "border-white"
+          }`}
+        ></div>
 
-          {/* Luna minimalista */}
-          <div
-            className={`w-6 h-6 rounded-full border transition-all duration-500 ${
-              scrolled ? "border-vino" : "border-beige"
-            }`}
-          ></div>
-
+        {/* TEXTO CENTRADO */}
+        <div className="absolute left-1/2 -translate-x-1/2">
           <div
             className={`font-serif text-xl tracking-wide transition-colors duration-500 ${
-              scrolled ? "text-vino" : "text-beige"
+              navMode === "dark" ? "text-black" : "text-white"
             }`}
           >
             Mujer Origen
           </div>
-
         </div>
 
-        {/* Botón */}
+        {/* BOTÓN */}
         <a
-          href="https://wa.me/573001234567?text=Hola%20Danna,%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen%20%F0%9F%8C%95"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-500 ${
-            scrolled
-              ? "bg-vino text-beige hover:bg-[#5a1823]"
-              : "border border-beige text-beige hover:bg-beige hover:text-vino"
-          }`}
+          href="https://wa.me/573001234567"
+          className={`
+            px-6 py-2 rounded-full text-sm tracking-wide
+            transition-all duration-500
+            ${
+              navMode === "dark"
+                ? "bg-[#6B1F2B] text-white hover:bg-[#541621]"
+                : "border border-white text-white hover:bg-[#6B1F2B] hover:border-[#6B1F2B]"
+            }
+          `}
         >
           Asegurar cupo
         </a>
