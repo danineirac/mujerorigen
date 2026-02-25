@@ -1,5 +1,7 @@
 import heroImage from "../../assets/images/danna.jpg"
 import FadeInSection from "../ui/FadeInSection"
+import GoldRain from "../ui/goldrain"
+
 
 export default function Hero() {
   return (
@@ -20,15 +22,18 @@ export default function Hero() {
                         to-black/85" />
       </div>
 
+      {/* Lluvia Dorada */}
+      <GoldRain />  
+
       {/* Contenido */}
-      <div className="relative z-10 max-w-4xl px-6 text-white">
+      <div className="relative z-10 max-w-4xl px-6 text-orange-300">
 
         <FadeInSection>
 
           <h1 className="font-serif text-4xl md:text-6xl leading-tight mb-6">
             No estás rota.
             <br />
-            <span className="italic text-[#E8DFD4]">
+            <span className="italic text-[#ffa4a4]">
               Estás agotada de sostener.
             </span>
           </h1>

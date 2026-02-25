@@ -17,7 +17,7 @@ export default function PerfilEvento() {
         <div className="relative grid md:grid-cols-2 gap-16">
 
           {/* Línea divisoria */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-beige/30"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-beige/30"></div>
 
           {/* ES PARA TI */}
           <div className="space-y-6">
