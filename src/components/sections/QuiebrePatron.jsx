@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
-import foto1 from "../../assets/images/danna.jpg"
-import foto2 from "../../assets/images/danna.jpg"
-import foto3 from "../../assets/images/danna.jpg"
+import foto1 from "../../assets/images/danna1.jpg"
+import foto2 from "../../assets/images/danna2.jpg"
+import foto3 from "../../assets/images/danna3.jpg"
 
 export default function Identificacion() {
   return (
@@ -10,8 +10,8 @@ export default function Identificacion() {
       className="relative py-32 overflow-hidden"
     >
       {/* Degradado base */}
-      <div className="absolute inset-0 bg-gradient-to-b 
-                      from-[#efe6d8] 
+      <div className="absolute inset-0 bg-linear-to-b 
+                      from-[##f6f1e9] 
                       via-[#d8d2c4] 
                       to-[#5f6f5c]" />
 
@@ -35,7 +35,7 @@ export default function Identificacion() {
                         grid md:grid-cols-2 gap-12 items-center">
 
           {/* Texto */}
-          <div className="text-[#f3eadf]">
+          <div className="text-[#6b1f2b]">
             <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">
               Esto no es otro evento motivacional.
             </h2>
@@ -53,7 +53,7 @@ export default function Identificacion() {
           </div>
 
           {/* Fotos desordenadas */}
-          <div className="relative h-[520px] flex items-center justify-center">
+          <div className="relative h-130 flex items-center justify-center">
 
   {[foto1, foto2, foto3].map((foto, i) => {
 

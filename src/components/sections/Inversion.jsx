@@ -16,7 +16,7 @@ export default function Inversion() {
         <div className="grid md:grid-cols-2 gap-12">
 
           {/* GENERAL */}
-          <div className="bg-white border border-beige rounded-[2rem] p-12 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+          <div className="bg-white border border-beige rounded-4xl p-12 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
 
             <h3 className="font-serif text-2xl text-vino mb-6">
               🌿 Entrada General
@@ -38,7 +38,7 @@ export default function Inversion() {
           </div>
 
           {/* VIP */}
-          <div className="bg-white border-2 border-vino rounded-[2rem] p-12 shadow-2xl transition-all duration-500 hover:shadow-3xl hover:-translate-y-2 relative">
+          <div className="bg-white border-2 border-vino rounded-4xl p-12 shadow-2xl transition-all duration-500 hover:shadow-3xl hover:-translate-y-2 relative">
 
             {/* Badge */}
             <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vino text-beige px-6 py-2 rounded-full text-sm tracking-wide shadow-lg">
