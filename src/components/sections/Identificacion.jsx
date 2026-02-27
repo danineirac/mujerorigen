@@ -1,4 +1,4 @@
-import identiImage from "../../assets/images/danna.jpg"
+import identiImage from "../../assets/images/quiebrepatron.jpg"
 
 export default function Identificacion() {
   return (

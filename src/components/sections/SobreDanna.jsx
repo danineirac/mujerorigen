@@ -1,8 +1,23 @@
-import heroImage from "../../assets/images/danna.jpg"
+import heroImage from "../../assets/images/sobredanna.jpg"
+import BurgundySunflower from "../ui/BurgundySunflower"
+import { motion } from "framer-motion"
 
 export default function SobreDanna() {
   return (
-    <section id="SobreDanna" data-nav="dark" className="relative bg-fondo py-32 px-6 text-center overflow-hidden">
+    <section
+      id="SobreDanna"
+      data-nav="dark"
+      className="relative bg-fondo py-32 px-6 text-center overflow-visible"
+    >
+
+      {/* Flores Izquierda */}
+      <BurgundySunflower side="left" delay={2.2} />
+      
+
+      {/* Flores Derecha */}
+      
+      <BurgundySunflower side="right" delay={2.8} />
+
 
       <div className="max-w-4xl mx-auto">
 
@@ -19,10 +34,18 @@ export default function SobreDanna() {
           {/* Marco */}
           <div className="relative p-4 border-2 border-vino rounded-[2rem] shadow-2xl bg-beige">
 
-            <img
+            <motion.img
               src={heroImage}
               alt="Danna Neira"
               className="rounded-[1.5rem] w-72 md:w-96 object-cover"
+              animate={{
+                scale: [1, 1.03, 1],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
 
           </div>
