@@ -7,11 +7,11 @@ export default function SobreDanna() {
     <section
       id="SobreDanna"
       data-nav="dark"
-      className="relative bg-fondo py-32 px-6 text-center overflow-visible"
+      className="relative bg-fondo py-32 px-6 text-center overflow-hidden"
     >
 
       {/* Flores Izquierda */}
-      <BurgundySunflower side="left" delay={2.2} />
+      <BurgundySunflower side="left" delay={2.2}/>
       
 
       {/* Flores Derecha */}
@@ -24,7 +24,7 @@ export default function SobreDanna() {
         <h2 className="font-serif text-3xl md:text-5xl text-vino mb-16">
           Sobre Danna
         </h2>
-
+    
         {/* Marco ceremonial */}
         <div className="relative flex justify-center mb-16">
 
@@ -32,12 +32,12 @@ export default function SobreDanna() {
           <div className="absolute w-96 h-96 bg-vino/10 rounded-full blur-3xl"></div>
 
           {/* Marco */}
-          <div className="relative p-4 border-2 border-vino rounded-[2rem] shadow-2xl bg-beige">
+          <div className="relative p-4 border-2 border-vino rounded-4xl shadow-2xl bg-beige">
 
             <motion.img
               src={heroImage}
               alt="Danna Neira"
-              className="rounded-[1.5rem] w-72 md:w-96 object-cover"
+              className="rounded-3xl w-72 md:w-96 object-cover"
               animate={{
                 scale: [1, 1.03, 1],
               }}

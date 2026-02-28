@@ -28,8 +28,7 @@ export default function BurgundySunflower({
       }}
     >
       <svg
-        width="700"
-        height="1400"
+        className="w-125 max-w-[70vw] h-auto"
         viewBox="0 0 700 1400"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +49,9 @@ export default function BurgundySunflower({
             <ellipse
               key={i}
               cx="0"
-              cy="-180"
+              cy="-100"
               rx="65"
-              ry="180"
+              ry="100"
               fill="#6B1F2B"
               opacity="0.3"
               transform={`rotate(${i * 20})`}
