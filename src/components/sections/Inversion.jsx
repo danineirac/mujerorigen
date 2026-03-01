@@ -33,6 +33,25 @@ export default function Inversion() {
             <div className="space-y-4 text-gray-700 text-left mb-10">
               <p>✔ Acceso completo al evento</p>
               <p>✔ Entrada para ti y una persona más</p>
+              <p>✔ Guía de Integración Post Evento</p>
+            </div>
+
+            {/* Barra de cupos */}
+            <div className="mt-6">
+              <p className="text-sm text-gray-500 mb-2">
+                50% de cupos reservados
+              </p>
+
+              <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
+
+                {/* Progreso azul */}
+                <div className="relative h-full w-[50%] bg-[#1e3a8a] rounded-full overflow-hidden">
+
+                  {/* Destello animado */}
+                  <div className="absolute inset-0 shimmer"></div>
+
+                </div>
+              </div>
             </div>
 
           </div>
@@ -64,6 +83,24 @@ export default function Inversion() {
               <p>✔ Guía de Integración Post Evento</p>
               <p>✔ Ubicación preferencial</p>
               <p>✔ Entrada para ti y otra persona</p>
+            </div>
+
+             {/* Barra de cupos */}
+            <div className="mt-6">
+              <p className="text-sm text-gray-500 mb-2">
+                82% de cupos reservados
+              </p>
+
+              <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
+
+                {/* Progreso azul */}
+                <div className="relative h-full w-[82%] bg-[#1e3a8a] rounded-full overflow-hidden">
+
+                  {/* Destello animado */}
+                  <div className="absolute inset-0 shimmer"></div>
+
+                </div>
+              </div>
             </div>
 
           </div>

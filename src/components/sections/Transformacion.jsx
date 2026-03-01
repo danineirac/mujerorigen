@@ -78,7 +78,7 @@ export default function Transformacion() {
 
         </div>
 
-        <div className="mt-20 space-y-4">
+        <div className="mt-20 space-y-4 text-[#ced1cd]">
           <p className="font-serif text-xl text-vino">
             No sales motivada.
           </p>

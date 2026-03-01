@@ -8,7 +8,7 @@ export default function Identificacion() {
   return (
     <section
       id="Identificacion"
-      className="relative py-32 overflow-hidden"
+      className="relative py-16 md:py-32 overflow-hidden"
     >
       {/* Degradado base */}
       <div className="absolute inset-0 bg-linear-to-b 
@@ -56,7 +56,7 @@ export default function Identificacion() {
 
 
           {/* Fotos desordenadas */}
-          <div className="relative h-130 flex items-center justify-center">
+          <div className="relative h-[380px] md:h-[520px] flex items-center justify-center">
 
             {[foto1, foto2, foto3].map((foto, i) => {
 
