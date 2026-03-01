@@ -1,6 +1,6 @@
 import heroImage from "../../assets/images/danna.jpg"
 import FadeInSection from "../ui/FadeInSection"
-import GoldRain from "../ui/goldrain"
+import GoldRain from "../ui/GoldRain"
 
 
 export default function Hero() {
