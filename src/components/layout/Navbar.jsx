@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
+
 export default function Navbar() {
   const [navMode, setNavMode] = useState("light")
 
@@ -72,5 +73,6 @@ export default function Navbar() {
 
       </div>
     </motion.header>
+    
   )
 }
