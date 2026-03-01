@@ -1,4 +1,5 @@
 import identiImage from "../../assets/images/quiebrepatron.jpg"
+import FadeInSection from "../ui/FadeInSection"
 
 export default function Identificacion() {
   return (
@@ -18,9 +19,12 @@ export default function Identificacion() {
     }}
   ></div>
 
+
   {/* Contenido */}
   <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
+      
+      
+      <FadeInSection>
         {/* TEXTO IZQUIERDA */}
         <div>
           <h2 className="font-serif text-3xl md:text-5xl text-vino leading-tight mb-8">
@@ -53,17 +57,17 @@ export default function Identificacion() {
             No es falta de fuerza. <br />
             Es desconexión.
           </p>
-
           <a
-            href="https://wa.me/573001234567?text=Hola%20Danna,%20quiero%20vivir%20Mujer%20Origen%20%F0%9F%8C%95"
+            href="https://wa.me/573214633040?text=Hola%20Danna,%20quiero%20vivir%20Mujer%20Origen%20%F0%9F%8C%95"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-10 bg-vino hover:bg-[#5a1823] transition-all duration-300 px-8 py-4 rounded-full text-beige font-semibold tracking-wide shadow-md hover:shadow-xl hover:scale-105"
+            className="inline-block mt-10 bg-vino hover:bg-[#5a1823] transition-all duration-300 px-8 py-4 rounded-full text-beige font-semibold tracking-wide shadow-md hover:shadow-xl hover:scale-105 hover:text-white"
           >
             QUIERO VIVIR MUJER ORIGEN
           </a>
 
         </div>
+        </FadeInSection>
 
         {/* IMAGEN DERECHA */}
         <div className="relative">

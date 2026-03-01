@@ -7,7 +7,7 @@ export default function BurgundySunflower({
   center = false,
 }) {
   return (
-    <motion.div
+    <motion.div 
       initial={{ scaleY: 0, opacity: 0 }}
       whileInView={{ scaleY: 1, opacity: 0.25 }}
       transition={{
@@ -17,7 +17,7 @@ export default function BurgundySunflower({
       }}
       viewport={{ once: true }}
       className={`
-        absolute bottom-0
+        absolute bottom-0 pointer-events-none
         ${center ? "left-1/2 -translate-x-1/2" : ""}
         ${!center && side === "left" ? "-left-24" : ""}
         ${!center && side === "right" ? "-right-24" : ""}

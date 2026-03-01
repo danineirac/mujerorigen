@@ -1,3 +1,11 @@
+import RitualImageCarousel from "../ui/RitualImageCarousel"
+
+
+const carouselImages = [
+  "/images/retiro1.jpg",
+  "/images/retiro2.jpg",
+  "/images/retiro3.jpg"
+]
 export default function PerfilEvento() {
   return (
     <section
@@ -17,20 +25,50 @@ export default function PerfilEvento() {
 
         {/* Encabezado */}
         <div className="text-center mb-24 max-w-3xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-6xl mb-6 leading-tight">
+          <h2 className="font-serif text-4xl md:text-6xl mb-6 leading-tight text-[#ffdf77ab]">
             Mujer Origen no es para todas
           </h2>
-          <p className="text-xl opacity-80">
+
+          <p className="text-xl text-[#E8DFD4]/80">
             Es para la mujer que siente que ya no puede seguir igual.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-20">
 
-          {/* ES PARA TI */}
-          <div className="space-y-8">
-            <h3 className="font-serif text-3xl mb-6">
+
+        {/* Grid */}
+        <div className="mt-24 grid md:grid-cols-3 gap-16 items-center">
+
+          {/* IZQUIERDA — NO ES PARA TI */}
+          <div className="space-y-8 text-right md:text-right">
+            <h3 className="font-serif text-3xl mb-6 text-[#ffdf77ab] opacity-90">
+              No es para ti si:
+            </h3>
+
+            {[
+              "Buscas entretenimiento.",
+              "No estás lista para hacer trabajo emocional.",
+              "Esperas cambios sin responsabilidad personal."
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4 justify-end group text-amber-50">
+                <p className="text-lg opacity-75 leading-relaxed">
+                  {item}
+                </p>
+                <span className="text-2xl text-[#D4AF37]/50 group-hover:scale-110 transition duration-300">
+                  —
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* CENTRO — CARRUSEL */}
+          <div className="flex justify-center">
+            <RitualImageCarousel images={carouselImages} />
+          </div>
+
+          {/* DERECHA — ES PARA TI */}
+          <div className="space-y-8 text-left">
+            <h3 className="font-serif text-3xl mb-6 text-[#ffdf77ab]">
               Es para ti si:
             </h3>
 
@@ -40,33 +78,11 @@ export default function PerfilEvento() {
               "Estás dispuesta a mirar tus heridas y hacerte responsable.",
               "Entiendes que tu siguiente nivel es interno."
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4 group">
-                <span className="text-2xl text-beige group-hover:scale-110 transition duration-300">
+              <div key={index} className="flex items-start gap-4 group text-amber-50">
+                <span className="text-2xl text-[#D4AF37] group-hover:scale-110 transition duration-300">
                   ✦
                 </span>
                 <p className="text-lg opacity-90 leading-relaxed">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* NO ES PARA TI */}
-          <div className="space-y-8">
-            <h3 className="font-serif text-3xl mb-6 opacity-90">
-              No es para ti si:
-            </h3>
-
-            {[
-              "Buscas entretenimiento.",
-              "No estás lista para hacer trabajo emocional.",
-              "Esperas cambios sin responsabilidad personal."
-            ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4 group">
-                <span className="text-2xl text-beige/50 group-hover:scale-110 transition duration-300">
-                  —
-                </span>
-                <p className="text-lg opacity-75 leading-relaxed">
                   {item}
                 </p>
               </div>
@@ -77,7 +93,7 @@ export default function PerfilEvento() {
 
         {/* Cierre */}
         <div className="text-center mt-32 max-w-3xl mx-auto">
-          <p className="font-serif text-3xl md:text-4xl leading-snug">
+          <p className="font-serif text-3xl md:text-4xl leading-snug text-[#ffdf77ab]">
             Y está lista para elegirse de verdad.
           </p>
         </div>
@@ -85,8 +101,8 @@ export default function PerfilEvento() {
       </div>
 
       {/* Glow elegante */}
-      <div className="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-black/30 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-black/30 rounded-full blur-3xl"></div>
+      <div className="absolute -top-32 left-1/4 w-125 h-125 bg-black/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-125 h-125 bg-black/30 rounded-full blur-3xl"></div>
     </section>
   )
 }

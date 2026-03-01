@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion"
+import FadeInSection from "../ui/FadeInSection"
 import { useRef } from "react"
 
 export default function Transformacion() {
@@ -47,8 +48,11 @@ export default function Transformacion() {
         className="absolute inset-0 bg-[#4F5D4D]"
       />
 
+      
+        
+      
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-
+        <FadeInSection>
         <h2 className="font-serif text-3xl md:text-5xl text-vino mb-6">
           Lo que cambia después de Mujer Origen
         </h2>
@@ -57,7 +61,7 @@ export default function Transformacion() {
           Tu energía cambia, y cuando tu energía cambia,
           tus relaciones y todo a tu alrededor también.
         </p>
-
+        </FadeInSection>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {beneficios.map((item, index) => (

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import FadeInSection from "../ui/FadeInSection"
 
 export default function Metodo() {
   const fases = [
@@ -23,15 +24,17 @@ export default function Metodo() {
     <section id="Metodo" data-nav="dark" className="relative bg-beige py-32 px-6 overflow-hidden">
 
       <div className="max-w-5xl mx-auto">
+        <FadeInSection>
+          <div className="text-center mb-24">
+            <h2 className="font-serif text-3xl md:text-5xl text-vino mb-4">
+              Cómo sucede la transformación
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Mujer Origen está estructurado en tres movimientos profundos.
+            </p>
+          </div>
+        </FadeInSection>
 
-        <div className="text-center mb-24">
-          <h2 className="font-serif text-3xl md:text-5xl text-vino mb-4">
-            Cómo sucede la transformación
-          </h2>
-          <p className="text-gray-600 text-lg">
-            Mujer Origen está estructurado en tres movimientos profundos.
-          </p>
-        </div>
 
         <div className="relative">
 
@@ -40,61 +43,78 @@ export default function Metodo() {
 
           <div className="space-y-24">
 
-            {fases.map((fase, index) => (
-              <div
-                key={index}
-                className={`relative flex flex-col md:flex-row items-center ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Contenido */}
-                <div className="md:w-1/2 px-8 text-center md:text-left">
-                  <h3 className="font-serif text-2xl md:text-3xl text-vino mb-6">
-                    {fase.titulo}
-                  </h3>
-                  <p className="text-gray-700 text-lg leading-relaxed">
-                    {fase.texto}
-                  </p>
-                </div>
+            {fases.map((fase, index) => {
 
-                {/* Punto ceremonial */}
-                {/* Punto ceremonial animado */}
-                <div className="relative z-10 flex items-center justify-center">
+  const fromRight = index % 2 === 0
 
-                  <motion.div
-                    className="w-14 h-14 rounded-full flex items-center justify-center shadow-xl"
-                    animate={{
-                      background: [
-                        "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)",
-                        "linear-gradient(135deg, #E8DFD4 0%, #6B1F2B 100%)",
-                        "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)"
-                      ]
-                    }}
-                    transition={{
-                      duration: 6 + index, // cada punto con timing distinto
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    <motion.div
-                      className="w-6 h-6 rounded-full"
-                      animate={{
-                        backgroundColor: ["#E8DFD4", "#6B1F2B", "#E8DFD4"]
-                      }}
-                      transition={{
-                        duration: 6 + index,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    />
-                  </motion.div>
+  return (
+    <motion.div
+      key={index}
+      initial={{
+        opacity: 0,
+        x: fromRight ? 80 : -80
+      }}
+      whileInView={{
+        opacity: 1,
+        x: 0
+      }}
+      transition={{
+        duration: 1.2,
+        ease: [0.22, 1, 0.36, 1]
+      }}
+      viewport={{ once: true, amount: 0.4 }}
+      className={`relative flex flex-col md:flex-row items-center ${
+        fromRight ? "md:flex-row-reverse" : ""
+      }`}
+    >
+      {/* Contenido */}
+      <div className="md:w-1/2 px-8 text-center md:text-left">
+        <h3 className="font-serif text-2xl md:text-3xl text-vino mb-6">
+          {fase.titulo}
+        </h3>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          {fase.texto}
+        </p>
+      </div>
 
-                </div>
+      {/* Punto ceremonial */}
+      <div className="relative z-10 flex items-center justify-center">
 
-                <div className="md:w-1/2"></div>
+        <motion.div
+          className="w-14 h-14 rounded-full flex items-center justify-center shadow-xl"
+          animate={{
+            background: [
+              "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)",
+              "linear-gradient(135deg, #E8DFD4 0%, #6B1F2B 100%)",
+              "linear-gradient(135deg, #6B1F2B 0%, #E8DFD4 100%)"
+            ]
+          }}
+          transition={{
+            duration: 6 + index,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        >
+          <motion.div
+            className="w-6 h-6 rounded-full"
+            animate={{
+              backgroundColor: ["#E8DFD4", "#6B1F2B", "#E8DFD4"]
+            }}
+            transition={{
+              duration: 6 + index,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        </motion.div>
 
-              </div>
-            ))}
+      </div>
+
+      <div className="md:w-1/2"></div>
+
+    </motion.div>
+  )
+})}
 
           </div>
         </div>

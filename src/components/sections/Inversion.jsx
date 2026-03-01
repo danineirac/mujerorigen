@@ -41,7 +41,7 @@ export default function Inversion() {
           <div className="bg-white border-2 border-vino rounded-4xl p-12 shadow-2xl transition-all duration-500 hover:shadow-3xl hover:-translate-y-2 relative">
 
             {/* Badge */}
-            <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vino text-beige px-6 py-2 rounded-full text-sm tracking-wide shadow-lg">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-vino text-beige px-6 py-2 rounded-full text-sm tracking-wide shadow-lg">
               CUPOS LIMITADOS
             </div>
 
@@ -73,10 +73,10 @@ export default function Inversion() {
         {/* Botón grande final */}
         <div className="mt-24">
           <a
-            href="https://wa.me/573001234567?text=Hola%20Danna,%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen%20%F0%9F%8C%95"
+            href="https://wa.me/573214633040?text=Hola%20Danna,%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen%20%F0%9F%8C%95"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-vino hover:bg-[#5a1823] transition-all duration-300 px-14 py-5 rounded-full text-beige text-lg font-semibold tracking-wide shadow-xl hover:shadow-2xl hover:scale-105"
+            className="inline-block bg-vino hover:bg-[#5a1823] transition-all duration-300 px-14 py-5 rounded-full text-beige text-lg font-semibold tracking-wide shadow-xl hover:shadow-2xl hover:scale-105 hover:text-white"
           >
             ASEGURAR MI CUPO AHORA
           </a>

@@ -55,7 +55,9 @@ export default function Navbar() {
 
         {/* BOTÓN */}
         <a
-          href="https://wa.me/573001234567"
+          href="https://wa.me/573214633040?text=Hola%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen"
+          rel="noopener noreferrer"
+          target="_blank"
           className={`
             px-6 py-2 rounded-full text-sm tracking-wide
             transition-all duration-500
