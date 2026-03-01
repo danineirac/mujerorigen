@@ -31,23 +31,21 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2 }}
-      className="fixed top-0 left-0 w-full z-50 py-6 transition-all duration-500"
+      className="fixed top-0 left-0 w-full z-50 py-4 md:py-6 transition-all duration-500"
     >
-      <div className="relative max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div className="relative max-w-6xl mx-auto px-4 md:px-6 flex items-center justify-between">
 
         {/* LUNA */}
         <div
-          className={`w-6 h-6 rounded-full border transition-all duration-500 ${
-            navMode === "dark" ? "border-black" : "border-white"
-          }`}
+          className={`w-5 h-5 md:w-6 md:h-6 rounded-full border transition-all duration-500 ${navMode === "dark" ? "border-black" : "border-white"
+            }`}
         ></div>
 
         {/* TEXTO CENTRADO */}
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div className="absolute md:left-1/2 md:-translate-x-1/2 left-1/2 -translate-x-1/2">
           <div
-            className={`font-serif text-xl tracking-wide transition-colors duration-500 ${
-              navMode === "dark" ? "text-black" : "text-white"
-            }`}
+            className={`font-serif text-base md:text-xl tracking-wide transition-colors duration-500 ${navMode === "dark" ? "text-black" : "text-white"
+              }`}
           >
             Mujer Origen
           </div>
@@ -59,16 +57,17 @@ export default function Navbar() {
           rel="noopener noreferrer"
           target="_blank"
           className={`
-            px-6 py-2 rounded-full text-sm tracking-wide
-            transition-all duration-500
-            ${
-              navMode === "dark"
-                ? "bg-[#6B1F2B] text-white hover:bg-[#541621]"
-                : "border border-white text-white hover:bg-[#6B1F2B] hover:border-[#6B1F2B]"
+        px-4 md:px-6 py-1.5 md:py-2 
+        rounded-full text-xs md:text-sm tracking-wide
+        transition-all duration-500
+        ${navMode === "dark"
+              ? "bg-[#6B1F2B] text-white hover:bg-[#541621]"
+              : "border border-white text-white hover:bg-[#6B1F2B] hover:border-[#6B1F2B]"
             }
-          `}
+      `}
         >
-          Asegurar cupo
+          <span className="hidden sm:inline">Asegurar cupo</span>
+          <span className="sm:hidden">Cupo</span>
         </a>
 
       </div>

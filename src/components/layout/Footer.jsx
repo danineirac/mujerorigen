@@ -37,53 +37,52 @@ export default function Footer() {
           </div>
 
           {/* Columna 2 */}
-          <div className="space-y-4">
-            <p className="uppercase tracking-widest text-xs opacity-60">
-              Contacto
-            </p>
+<div className="space-y-4 flex flex-col items-center justify-center text-center md:text-center md:items-center">
+  <p className="uppercase tracking-widest text-xs opacity-60">
+    Contacto
+  </p>
 
+  <div className="flex flex-col items-center gap-4">
+    <a
+      href="https://wa.me/573214633040"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:opacity-70 transition"
+    >
+      <img
+        src={whatsappIcon}
+        alt="whatsapp"
+        className="w-6 h-6"
+      />
+    </a>
 
-            <a
-              href="https://wa.me/573214633040"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block hover:opacity-70 transition content-center"
-            >
-              <img
-                src={whatsappIcon}
-                alt="whatsapp"
-                className=""
-              />
-            </a>
+    <a
+      href="https://www.instagram.com/dannaneira17"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:opacity-70 transition"
+    >
+      <img
+        src={instagramIcon}
+        alt="Instagram"
+        className="w-6 h-6"
+      />
+    </a>
 
-            <a
-              href="https://www.instagram.com/dannaneira17"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block hover:opacity-70 transition"
-            >
-              
-              <img
-                src={instagramIcon}
-                alt="Instagram"
-                className="items-center"
-              />
-              
-            </a>
-
-            <a
-              href="https://www.tiktok.com/@dannaneira17"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block hover:opacity-70 transition"
-            >
-              <img
-                src={tiktokIcon}
-                alt="TikTok"
-                className="items-center"
-              />
-            </a>
-          </div>
+    <a
+      href="https://www.tiktok.com/@dannaneira17"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:opacity-70 transition"
+    >
+      <img
+        src={tiktokIcon}
+        alt="TikTok"
+        className="w-6 h-6"
+      />
+    </a>
+  </div>
+</div>
 
           {/* Columna 3 */}
           <div className="space-y-4">

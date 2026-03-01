@@ -71,7 +71,7 @@ export default function Inversion() {
         </div>
 
         {/* Botón grande final */}
-        <div className="mt-24">
+        <div className="mt-24 relative z-10">
           <a
             href="https://wa.me/573214633040?text=Hola%20Danna,%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen%20%F0%9F%8C%95"
             target="_blank"
@@ -85,7 +85,7 @@ export default function Inversion() {
       </div>
 
       {/* Glow suave */}
-      <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-salvia/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-salvia/10 rounded-full blur-3xl pointer-events-none z-0"></div>
 
     </section>
   )
