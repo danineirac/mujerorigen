@@ -144,6 +144,16 @@ export default function SobreDanna() {
         >
           QUIERO ASEGURAR MI CUPO
         </a>
+        {/* Texto debajo del botón */}
+          <a
+            href="https://wa.me/573214633040"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 text-sm text-black/80 hover:text-red-900 underline"
+          >
+            ⚠️ Promoción de lanzamiento 2x1 por tiempo limitado
+
+          </a>
 
       </div>
 

@@ -61,26 +61,35 @@ export default function Hero() {
             11 de abril · Paipa – Boyacá · 8:00 am a 7:00 pm
           </div>
 
-          {/* Botón ahora dentro del bloque animado */}
+          {/* Botón principal */}
           <a
-            href="https://wa.me/573214633040?text=Hola%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen"
+            href="https://wa.me/573214633040?text=Hola%20quiero%20mi%20cupo%202x1%20para%20Mujer%20Origen"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block 
-                       bg-[#6B1F2B] 
-                       hover:bg-[#541621] 
-                       transition-all duration-300 
-                       px-12 py-5 
-                       rounded-full 
-                       text-white 
-                       font-semibold 
-                       tracking-wider 
-                       shadow-[0_15px_40px_rgba(0,0,0,0.5)] 
-                       hover:scale-105"
+             bg-[#6B1F2B] 
+             hover:bg-[#541621] 
+             transition-all duration-300 
+             px-12 py-5 
+             rounded-full 
+             text-white 
+             font-semibold 
+             tracking-wider 
+             shadow-[0_15px_40px_rgba(0,0,0,0.5)] 
+             hover:scale-105"
           >
-            QUIERO ASEGURAR MI CUPO
+            🔥 QUIERO MI CUPO 2x1 AHORA
           </a>
 
+          {/* Texto debajo del botón */}
+          <a
+            href="https://wa.me/573214633040"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block mt-4 text-sm text-white/80 hover:text-white underline"
+          >
+            Hablar por WhatsApp
+          </a>
         </FadeInSection>
 
       </div>
