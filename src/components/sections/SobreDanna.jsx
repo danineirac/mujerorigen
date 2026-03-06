@@ -8,7 +8,7 @@ export default function SobreDanna() {
     <section
       id="SobreDanna"
       data-nav="dark"
-      className="relative bg-fondo py-32 px-6 text-center overflow-hidden"
+      className="relative bg-fondo py-0 md:py-32 px-6 text-center overflow-hidden"
     >
 
       {/* CAPA DECORATIVA */}
@@ -63,10 +63,10 @@ export default function SobreDanna() {
         <section className="mt-32">
 
   {/* BLOQUE 1 */}
-  <div className="grid md:grid-cols-2 items-center">
+  <div className="grid md:grid-cols-2 items-center ">
 
     {/* CONTENIDO */}
-    <div className="px-6 md:px-20 py-20 space-y-8 text-gray-700 text-lg leading-relaxed">
+    <div className=" py-0 px-6 md:px-20  space-y-8 text-gray-700 text-lg leading-relaxed">
       <p>
         <span className="font-semibold text-vino">
           Danna Neira
