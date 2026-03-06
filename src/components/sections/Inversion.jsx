@@ -1,6 +1,6 @@
 export default function Inversion() {
   return (
-    <section id="Inversion" data-nav="dark" className="relative bg-fondo py-32 px-6 overflow-hidden">
+    <section id="Inversion" data-nav="dark" className="relative py-0 md:py-32 bg-fondo px-6 overflow-hidden">
 
       <div className="max-w-6xl mx-auto text-center">
 
