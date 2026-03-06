@@ -88,3 +88,20 @@ html {
 .breathing-btn {
   animation: breathing 1.2s ease-in-out infinite;
 }
+
+/*Letra pegada estilo carta*/
+
+@keyframes cartaAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.carta-anim {
+  animation: cartaAppear 1.2s ease forwards;
+}
