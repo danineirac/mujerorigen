@@ -67,16 +67,17 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block 
-             bg-[#6B1F2B] 
-             hover:bg-[#541621] 
-             transition-all duration-300 
-             px-12 py-5 
-             rounded-full 
-             text-white 
-             font-semibold 
-             tracking-wider 
-             shadow-[0_15px_40px_rgba(0,0,0,0.5)] 
-             hover:scale-105"
+            breathing-btn
+            bg-[#6B1F2B] 
+            hover:bg-[#541621] 
+            transition-all duration-300 
+            px-12 py-5 
+            rounded-full 
+            text-white 
+            font-semibold 
+            tracking-wider 
+            shadow-[0_15px_40px_rgba(0,0,0,0.5)] 
+            hover:scale-105"
           >
             🔥 QUIERO MI CUPO 2x1 AHORA
           </a>

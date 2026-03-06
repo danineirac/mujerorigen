@@ -20,12 +20,13 @@ export default function Home() {
       <Hero />
       <Identificacion />
       <QuiebrePatron />
+      <DetallesEvento /> 
+      <Inversion />
       <Transformacion />
       <Metodo />
       <SobreDanna />
       <PerfilEvento />
-      <DetallesEvento />
-      <Inversion />
+       
       <LobaSection />
       <Footer />
     </>

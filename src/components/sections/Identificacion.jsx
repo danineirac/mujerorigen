@@ -61,7 +61,7 @@ export default function Identificacion() {
             href="https://wa.me/573214633040?text=Hola%20Danna,%20quiero%20vivir%20Mujer%20Origen%20%F0%9F%8C%95"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-10 bg-vino hover:bg-[#5a1823] transition-all duration-300 px-8 py-4 rounded-full text-beige font-semibold tracking-wide shadow-md hover:shadow-xl hover:scale-105 hover:text-white"
+            className="inline-block mt-10 bg-vino breathing-btn hover:bg-[#5a1823] transition-all duration-300 px-8 py-4 rounded-full text-beige font-semibold tracking-wide shadow-md hover:shadow-xl hover:scale-105 hover:text-white"
           >
             QUIERO VIVIR MUJER ORIGEN
           </a>

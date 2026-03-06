@@ -140,7 +140,7 @@ export default function SobreDanna() {
           href="https://wa.me/573214633040?text=Hola%20Danna,%20quiero%20asegurar%20mi%20cupo%20para%20Mujer%20Origen%20%F0%9F%8C%95"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-16 bg-vino hover:bg-[#5a1823] transition-all duration-300 px-10 py-4 rounded-full text-beige font-semibold tracking-wide shadow-lg hover:shadow-2xl hover:scale-105 hover:text-white"
+          className="inline-block mt-16 bg-vino breathing-btn hover:bg-[#5a1823] transition-all duration-300 px-10 py-4 rounded-full text-beige font-semibold tracking-wide shadow-lg hover:shadow-2xl hover:scale-105 hover:text-white"
         >
           QUIERO ASEGURAR MI CUPO
         </a>
