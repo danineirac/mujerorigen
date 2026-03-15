@@ -79,7 +79,7 @@ export default function Hero() {
             shadow-[0_15px_40px_rgba(0,0,0,0.5)] 
             hover:scale-105"
           >
-            🔥 QUIERO MI CUPO 2x1 AHORA
+            🔥 ULTIMOS CUPOS 2x1 AHORA
           </a>
 
           {/* Texto debajo del botón */}

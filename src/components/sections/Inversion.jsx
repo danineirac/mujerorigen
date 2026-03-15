@@ -39,13 +39,13 @@ export default function Inversion() {
             {/* Barra de cupos */}
             <div className="mt-6">
               <p className="text-sm text-gray-500 mb-2">
-                50% de cupos reservados
+                70% de cupos reservados
               </p>
 
               <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
 
                 {/* Progreso azul */}
-                <div className="relative h-full w-[50%] bg-[#1e3a8a] rounded-full overflow-hidden">
+                <div className="relative h-full w-[70%] bg-[#1e8a34] rounded-full overflow-hidden">
 
                   {/* Destello animado */}
                   <div className="absolute inset-0 shimmer"></div>
@@ -88,13 +88,13 @@ export default function Inversion() {
              {/* Barra de cupos */}
             <div className="mt-6">
               <p className="text-sm text-gray-500 mb-2">
-                82% de cupos reservados
+                99% de cupos reservados
               </p>
 
               <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
 
                 {/* Progreso azul */}
-                <div className="relative h-full w-[82%] bg-[#1e3a8a] rounded-full overflow-hidden">
+                <div className="relative h-full w-[99%] bg-[#8a501e] rounded-full overflow-hidden">
 
                   {/* Destello animado */}
                   <div className="absolute inset-0 shimmer"></div>
@@ -124,7 +124,7 @@ export default function Inversion() {
             rel="noopener noreferrer"
             className="block mt-4 text-sm text-black/80 hover:text-red-900 underline"
           >
-            ⚠️ Promoción de lanzamiento 2x1 por tiempo limitado
+            ⚠️ ULTIMOS CUPOS 2x1 por tiempo limitado
 
           </a>
         </div>
