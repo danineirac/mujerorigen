@@ -45,7 +45,7 @@ export default function Inversion() {
               <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
 
                 {/* Progreso azul */}
-                <div className="relative h-full w-[85%] bg-[#1e3a8a] rounded-full overflow-hidden">
+                <div className="relative h-full w-[89%] bg-[#1e3a8a] rounded-full overflow-hidden">
 
                   {/* Destello animado */}
                   <div className="absolute inset-0 shimmer"></div>
