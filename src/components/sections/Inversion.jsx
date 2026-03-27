@@ -39,7 +39,7 @@ export default function Inversion() {
             {/* Barra de cupos */}
             <div className="mt-6">
               <p className="text-sm text-gray-500 mb-2">
-                85% de cupos reservados
+                89% de cupos reservados
               </p>
 
               <div className="relative h-3 w-full bg-gray-200 rounded-full overflow-hidden">
