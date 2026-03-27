@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function CountdownBar() {
-  const targetDate = new Date("2026-03-28T11:59:00");
+  const targetDate = new Date("2026-04-02T11:59:00");
 
   const calculateTimeLeft = () => {
     const difference = targetDate - new Date();
